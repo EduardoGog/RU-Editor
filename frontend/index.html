@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editor Ru</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="titulo-editor"><span class="ru">RU</span> - Editor</h1>
+    <img src="https://www.svgrepo.com/show/373431/antlr.svg" alt="antlr-logo">
+</header>
+<main>
+    <div class="contenedor-principal">
+        <div>
+            <button class="boton-ejecutar" onclick="evaluar()">Ejecutar<i class="fa-solid fa-play"></i></button>
+        </div>
+    </div>
+    <div class="editor-grid">
+        <div class="codigo-editor">
+            <div class="ins-link">
+                <p>Escribe aquí tu código</p>
+                <input type="file" id="abrirArchivo" accept=".txt,.ru" style="display: none">
+                <div class="codigo-acciones">
+                    <button onclick="document.getElementById('abrirArchivo').click()">Abrir Archivo <i class="fa-regular fa-folder-open"></i></button>
+                    <button onclick="descargarCodigo()">Guardar código <i class="fa-regular fa-floppy-disk"></i></button>
+                </div>
+            </div>
+            <div class="codigo">
+                <textarea id="editor" rows="10" cols="50"></textarea>
+            </div>
+        </div>
+        <div class="resultados-editor">
+            <div class="ins-link">
+                <p>Resultados</p>
+                <button onclick="descargarResultado()">Guardar salida <i class="fa-regular fa-floppy-disk"></i></button>
+            </div>
+            <div class="resultado">
+                <p id="output"></p>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

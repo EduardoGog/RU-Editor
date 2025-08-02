@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jersey 25', cursive;
+}
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #FFFEFE;
+}
+/* Header; título y logo */
+header {
+    height: 80px;
+    background-color: #878787;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+header h1 {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #4C4646;
+}
+h1 span {
+    color: #633DA3;
+}
+img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+/* Contenedor principal */
+main {
+    margin: 20px auto;
+}
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-ejecutar {
+    padding: 10px;
+    border: 1px solid #4C4646;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.boton-ejecutar:hover {
+    background: #878787;
+    color: #fff;
+}
+/* Grid de editor */
+.editor-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+.codigo-editor, .resultados-editor {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 750px;
+    width: 800px;
+    padding: 20px;
+}
+.ins-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ins-link p {
+    font-size: 19px;
+}
+.ins-link button {
+    padding: 10px;
+    border: 1px solid #4C4646;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.ins-link button:hover {
+    background-color: #878787;
+    color: #fff;
+}
+/* Área de código */
+.codigo-editor textarea {
+    width: 100%;
+    margin: 10px auto;
+    border: 2px solid #4C4646;
+    padding: 30px;
+    height: 650px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.codigo-acciones {
+    display: flex;
+    gap: 15px;
+}
+/* Área de resultados */
+.resultado {
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid #4C4646;
+    padding: 30px;
+    height: 650px;
+    font-size: 20px
+}
+/* Mensajes de error */
+.error {
+    width: 100%;
+    background-color: #E08787;
+    font-size: 16px;
+    padding: 10px;
+    border-left: 4px solid #F70000;
+    line-height: 25px;
+}

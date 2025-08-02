@@ -1,0 +1,11 @@
+nombre = "Juan";
+activo = true;
+direccion = nil;
+
+if (activo && nombre == "Juan") {
+    imprime "Acceso concedido";
+} else {
+    imprime "Acceso denegado";
+}
+
+imprime direccion;
