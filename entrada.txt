@@ -1,11 +1,7 @@
-nombre = "Juan";
-activo = true;
-direccion = nil;
-
-if (activo && nombre == "Juan") {
-    imprime "Acceso concedido";
-} else {
-    imprime "Acceso denegado";
+i = 1;
+total = 0;
+while (i <= 5) {
+    total = total + i;
+    i = i + 1;
 }
-
-imprime direccion;
+imprime total;
