@@ -67,6 +67,10 @@ main {
     width: 800px;
     padding: 20px;
 }
+/* Textarea */
+#editor {
+    resize: none;
+}
 .ins-link {
     display: flex;
     justify-content: space-between;
