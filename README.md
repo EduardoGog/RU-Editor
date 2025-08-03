@@ -30,7 +30,7 @@ que se encarga de ejecutar el programa. Este archivo permite integrar el procesa
 Desde el navegador, el usuario escribe un programa en el lenguaje RU dentro de un área de texto `(textarea)` ofrecida por el frontend. Este código puede incluir asignaciones, condicionales, bucles, impresiones, etc.
 
 
-2. Al presionar el botón de "Evaluar"
+2. Al presionar el botón de "Ejecutar"
    Se dispara una función JavaScript (`evaluar()`) que recoge el contenido del editor y lo envía al servidor mediante una solicitud HTTP `POST` al endpoint `/ejecutar`
 
 
@@ -108,6 +108,11 @@ Se requiere tener instalado:
 * `Node.js` (v14 o superior)
 * `Java JDK` (v11 o superior)
 * `ANTLR` 4.13.2
+
+Una vez que se tienen los requisitos, es necesario instalar las dependencias, para eso, hacer uso del siguiente comando:
+```bash
+  npm install
+```
 
 En la carpeta raíz del proyecto ejecutar:
 ```bash
